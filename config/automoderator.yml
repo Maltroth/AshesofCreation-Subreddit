@@ -1,0 +1,26 @@
+# Filter new user posts to reduce spam. Posts will be "removed" but will show up in the modqueue and will also be in the unmoderated posts page, like normal unapproved posts.
+# type: submission
+# priority: -1
+# author:
+#    account_age: < 7 days
+#    combined_karma: < 20
+#    satisfy_any_threshold: false
+# action: filter
+# action_reason: "Flagged New Account"
+---
+# Flairs validation
+# Validate Links in flairs, ONLY accept referral links
+type: comment
+author:
+    flair_text (includes): ["https", "https", "www."]
+    ~flair_text (includes): ["ashesofcreation.com/ref/"]
+    set_flair: ""
+    overwrite_flair: true
+---
+type: submission
+author:
+    flair_text (includes): ["https", "https", "www."]
+    ~flair_text (includes): ["ashesofcreation.com/ref/"]
+    set_flair: ""
+    overwrite_flair: true
+---
