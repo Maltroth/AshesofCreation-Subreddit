@@ -1,3 +1,11 @@
+.md h3, 
+.md h4, 
+.md h5, 
+.md h6 {
+    font-family: Titillium,-apple-system,".SFNSDisplay-Light",Helvetica,Arial,"Lucida Grande",sans-serif;
+    font-weight: 300;
+}
+
 #header {
     height: 400px;
     background-image: url(%%header-banner%%);
@@ -108,6 +116,19 @@ a[href="https://discord.gg/ashesofcreation"]:hover,
 
 .side .titlebox h1.redditname a {
     top: 400px;
+}
+
+.side .spacer:nth-child(4) {
+    background-image: url(%%underrealm%%);
+    background-repeat: no-repeat;
+    background-size: 160% auto;
+    background-position: center bottom;
+    
+} 
+
+.side .titlebox {
+    background: rgba(250, 250, 250, .8);
+    padding-bottom: 90px;
 }
 
 .res .RESDropdownList {
@@ -259,10 +280,37 @@ body>.content[role=main] .link .midcol {
     margin-top: -10px;
 }
 
+.side .md h3:last-of-type {
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-top: 80px;
+}
+
+.side .md h4:nth-last-of-type(1),
+.side .md h4:nth-last-of-type(2) {
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.side .md ul:nth-last-of-type(1),
+.side .md ul:nth-last-of-type(2) {
+    list-style: none;
+    padding-left: 30px;
+}
+
 .side .md h2:nth-of-type(2):before { background-position: 0 -70px; }
 .side .spacer:nth-child(5) .sidecontentbox .title h1:before { background-position: 0 -140px; }
-.side .spacer:nth-child(7) .sidecontentbox .title h1:before { background-position: 0 -210px; }
+.side .spacer:nth-child(7) .sidecontentbox div,
+.side .spacer:nth-child(7) .sidecontentbox ul { display: none; }
 .side .spacer:nth-child(8) .sidecontentbox .title h1:before { background-position: 0 -280px; }
+
+.titlebox .bottom {
+    position: relative;
+    bottom: -80px;
+    border-top: 0;
+}
 
 .midcol .arrow:after {
     display: none;
@@ -390,6 +438,9 @@ body .thing .tagline .author.submitter {
     padding: 2px 5px;
 }
 
+/**
+ * User Flairs
+ */
 .res-nightmode .flair-intrepid-studios,
 .flair-intrepid-studios {
     font-size: 0;
@@ -397,6 +448,96 @@ body .thing .tagline .author.submitter {
     width: 95px;
     height: 25px;
     background: url(%%user-flairs%%) -11px -14px;
+}
+
+.link .flair {
+    margin-top: -2px;
+}
+
+.flair {
+    padding: 2px 5px 2px 20px;
+    position: relative;
+    height: 25px;
+    line-height: 24px;
+    font-size: 12px;
+}
+
+.titlebox .tagline .flair {
+    margin-top: -12px;
+}
+
+.flair.flair-referral-link {
+    line-height: 0;
+    font-size: 0 !important;
+    transition: all ease .2s;
+    padding-left: 92px;
+    margin-left: 25px;
+}
+
+.flair-referral-link:hover {
+    line-height: 24px;
+    font-size: 12px !important;
+    padding-left: 105px;
+}
+
+.flair-referral-link:before {
+    content: "Referral Link";
+    display: block;
+    line-height: 24px;
+    font-size: 12px !important;
+    position: absolute;
+    top: 2px;
+    left: 10px;
+    padding-left: 15px;
+}
+
+.flair:after,
+.flair-referral-link:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 6px;
+    left: 2px;
+    width: 15px;
+    height: 15px;
+    background: url(%%user-flairs%%) no-repeat 0 0;
+}
+
+.flair.flair-custom:after {
+    display: none;
+    content: none;
+}
+
+.flair.flair-youtube {
+    padding: 2px 5px 2px 30px;
+}
+
+.flair.flair-youtube:after {
+    width: 21px;
+    background: url(%%user-flairs%%) no-repeat -26px 0;
+}
+
+.flair.flair-twitch:after {
+    background: url(%%user-flairs%%) no-repeat -57px 0;
+}
+
+.comment .tagline .flair {
+    margin-top: -4px;
+}
+
+/**
+ * Link Flairs
+ */
+.linkflair-pve .linkflairlabel,
+.linkflair-pvp .linkflairlabel,
+.linkflair-pvx .linkflairlabel {
+    position: absolute;
+    left: -56px;
+    top: 30px;
+    background: transparent;
+    font-size: 14px !important;
+    font-weight: 300;
+    text-transform: uppercase;
 }
 
 /**
