@@ -127,7 +127,8 @@ a[href="https://discord.gg/ashesofcreation"]:hover,
     top: 400px;
 }
 
-.side .spacer:nth-child(4) {
+.side .spacer:nth-child(4),
+.comments-page .side .spacer:nth-child(5) {
     background-image: url(%%underrealm%%);
     background-repeat: no-repeat;
     background-size: 160% auto;
@@ -137,6 +138,11 @@ a[href="https://discord.gg/ashesofcreation"]:hover,
 
 .side .titlebox {
     background: rgba(250, 250, 250, .8);
+    padding-bottom: 90px;
+}
+
+.res.res-nightmode .side .titlebox {
+    background: rgba(25, 25, 25, .8);
     padding-bottom: 90px;
 }
 
@@ -565,6 +571,14 @@ body .thing .tagline .author.submitter {
     left: -65px;
     top: 10px;
     background: url(%%link-flairs%%);
+}
+
+.res-nightmode .linkflair-official:after,
+.res-nightmode .linkflair-suggestion:after,
+.res-nightmode .linkflair-question:after,
+.res-nightmode .linkflair-discussion:after,
+.res-nightmode .linkflair-oc:after {
+    display: none;
 }
 
 .linkflair-official:after { background-position: -5px 0 }
