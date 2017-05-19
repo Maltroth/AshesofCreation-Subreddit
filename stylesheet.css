@@ -570,7 +570,9 @@ body .thing .tagline .author.submitter {
 .linkflair-suggestion:after,
 .linkflair-question:after,
 .linkflair-discussion:after,
-.linkflair-oc:after {
+.linkflair-oc:after,
+.linkflair-resource:after,
+.linkflair-media:after {
     content: " ";
     display: block;
     width: 65px;
@@ -585,7 +587,9 @@ body .thing .tagline .author.submitter {
 .res-nightmode .linkflair-suggestion:after,
 .res-nightmode .linkflair-question:after,
 .res-nightmode .linkflair-discussion:after,
-.res-nightmode .linkflair-oc:after {
+.res-nightmode .linkflair-oc:after,
+.res-nightmode .linkflair-resource:after,
+.res-nightmode .linkflair-media:after {
     display: none;
 }
 
@@ -594,6 +598,8 @@ body .thing .tagline .author.submitter {
 .linkflair-question:after { background-position: -155px 0 }
 .linkflair-discussion:after { background-position: -228px 0 }
 .linkflair-oc:after { background-position: -302px 0 }
+.linkflair-resource:after { background-position: -374px 0 }
+.linkflair-media:after { background-position: -447px 0 }
 
 /**
  * RES
