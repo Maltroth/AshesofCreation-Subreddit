@@ -87,6 +87,10 @@
     background: url(%%icon-spritesheet%%) -405px -21px;
 }
 
+#sr-header-area .drop-choices {
+    z-index: 500;
+}
+
 a[href="https://discord.gg/ashesofcreation"] {
     display: block;
     position: absolute;
