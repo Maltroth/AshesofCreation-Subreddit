@@ -565,6 +565,12 @@ body .thing .tagline .author.submitter {
     text-transform: uppercase;
 }
 
+.flairselector .linkflair-pve .linkflairlabel,
+.flairselector .linkflair-pvp .linkflairlabel,
+.flairselector .linkflair-pvx .linkflairlabel {
+    position: static;
+}
+
 .linkflairlabel[title="Official"] { display: none; pointer-events: none; }
 .moderator .linkflairlabel[title="Official"] { display: inline-block; pointer-events: all; }
 
